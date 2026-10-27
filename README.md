@@ -70,7 +70,11 @@ on: pull_request
 
 Output: `issues`, the number of problems found.
 
-Screenshots are hosted at unguessable links for 30 days, then deleted. Privacy: [shotlane.dev/privacy](https://shotlane.dev/privacy). API docs: [shotlane.dev/docs/devices](https://shotlane.dev/docs/devices#what-it-checks).
+Screenshots are hosted at unguessable links for 30 days, then deleted. API docs: [shotlane.dev/docs/devices](https://shotlane.dev/docs/devices#what-it-checks).
+
+## Legal
+
+[Legal Notice](https://shotlane.dev/legal-notice) - [Terms](https://shotlane.dev/terms) - [Privacy](https://shotlane.dev/privacy)
 
 ## License
 
