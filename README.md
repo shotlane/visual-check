@@ -62,7 +62,7 @@ on: pull_request
 | `api-key` | (required) | Shotlane API key |
 | `url` | the deployment URL | Base URL to check |
 | `pages` | `/` | Space-separated paths |
-| `devices` | `iphone,ipad,desktop` | Any of iphone, iphone_se, pixel, galaxy, ipad, laptop, desktop, desktop_hd |
+| `devices` | `iphone,ipad,desktop` | Any of iphone, iphone_se, pixel, galaxy, iphone_duo, iphone_duo_cover, ipad, laptop, desktop, desktop_hd |
 | `vercel-bypass-secret` | | For protected Vercel previews |
 | `comment` | `true` | Post and update one PR comment (results always go to the job summary) |
 | `fail-on-issues` | `false` | Fail the step when problems are found |

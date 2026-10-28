@@ -17,7 +17,7 @@ inputs:
     required: false
     default: "/"
   devices:
-    description: Comma-separated devices (iphone, iphone_se, pixel, galaxy, ipad, laptop, desktop, desktop_hd). 1 credit per page per device.
+    description: Comma-separated devices (iphone, iphone_se, pixel, galaxy, iphone_duo, iphone_duo_cover, ipad, laptop, desktop, desktop_hd). 1 credit per page per device.
     required: false
     default: "iphone,ipad,desktop"
   vercel-bypass-secret:
@@ -78,7 +78,7 @@ runs:
                 if length == 0 then "No problems found." else join("\n") end)
             end)' <<<"$res")$'\n\n'
         done
-        body+="<sub>$total problem(s) · screenshots kept 30 days · [Shotlane](https://shotlane.dev/docs#check)</sub>"
+        body+="<sub>$total problem(s) · screenshots kept 30 days · [Shotlane](https://shotlane.dev/docs/devices#check)</sub>"
         echo "$body" >> "$GITHUB_STEP_SUMMARY"
         echo "issues=$total" >> "$GITHUB_OUTPUT"
         if [ "$COMMENT" = "true" ]; then
